@@ -1,0 +1,33 @@
+@import "../../style/mixins.scss";
+
+.snippet {
+  margin: 1.5rem 0;
+  @include card();
+  .title,
+  .description,
+  .code {
+    margin-bottom: 1rem;
+  }
+  .code {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.3rem;
+    background: var(--dark-color);
+  }
+  .btn-delete,
+  .btn-edit {
+    @include btn();
+    margin-right: 1rem;
+  }
+
+  .btn-edit {
+    background: var(--edit-color);
+    color: var(--text-light-color);
+  }
+
+  .btn-delete {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../style/mixins.scss";
+
+.auth-form {
+    @include card();
+    h2{
+        margin-bottom:1rem;
+        font-size:1.75rem;
+        
+    }
+    
+    .btn-submit{
+        margin-bottom:1rem;
+        @include btn();
+        background: var(--primary-color);
+        color:var(--text-light-color);
+    
+    .forgot-password{
+        color:var( --text-danger-color);
+    }}
+
+}
+
+
